@@ -10,52 +10,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Responsive website</title>
     <style>
-
-
+        @media only screen and (max-width:320px) {
+        .text{
+           font-size:15px;
+        }
+        .paragraph{
+            font-size:10px;
+        }
+       }
+    @media only screen and (max-width:1024px) and(min-width:768px)
+    {
+        .photo-text{
+            font-size:25px;
+        }
+    }
   </style>
 </head>
 
 <body>
-
-    <!--
-      <nav class="navbar navbar-expand-sm bg-light navbar-light my-3 ">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Jm <br>service</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand col-md-3" href="#">SM Service</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-md-7" id="collapsibleNavbar">
+            <ul class="navbar-nav m-md-2 px-md-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feature</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
       </nav>
+    
 
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </nav>
+    
       
 
-  -->
+ 
 
 
-    <div class="conatiner my-4">
+    <div class="container-fluid my-4">
         <div class="row">
 
-            <div class="col-sm-12 col-md-8 col-xl-6 col-xxl-8 ">
-                <img src="images/office.jpg" style="height:400px; width:90%;">
+            <div class="col-sm-12 col-md-8  col-xl-6 col-xxl-8">
+                <img src="images/office.jpg" style="height:40vh; width:100%;">
             </div>
 
-            <div class="col-sm-12 col-md-4 col-xl-6 col-xxl-4" style="background:white;">
+            <div class="col-sm-12 col-md-4  col-xl-6 col-xxl-4 " style="background:white;">
                 <h1>Startig your own bussiness</h1>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit illum id accusantium blanditiis
@@ -69,24 +88,25 @@
     </div>
 
     <!--photos   -->
-    <div class="conatainer ">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-4 col-xl-4 text-center " style="background:yellow;">
+            <div class="col-sm-12 col-md-3 col-xl-4 col-xxl-4 text-center m-xxl-0 mb-2 m-md-4" style="background:yellow;">
                 <h3>Time machine</h3>
                 <i class="fa fa-globe " style="font-size:150px;color:black"></i>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Quidem magni repudiandae autem
                 </p>
             </div>
+            
 
-            <div class="col-sm-12 col-md-4 col-xl-4 text-center" style="background:lightblue;">
+            <div class="col-sm-12 col-md-3 col-xl-4 col-xxl-4 text-center  m-xxl-0 mb-2  m-md-4" style="background:lightblue;">
                 <h3>Analytics</h3>
                 <i class="fa fa-globe " style="font-size:150px;color:black"></i>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Quidem magni repudiandae autem
                 </p>
             </div>
-            <div class="col-sm-12 col-md-4 col-xl-4  text-center" style="background:lightgreen;">
+            <div class="col-sm-12 col-md-3 col-xl-4  col-xxl-4 text-center  mb-2 m-xxl-0 m-md-4" style="background:lightgreen;">
                 <h3>World Wide Service</h3>
                 <i class="fa fa-globe " style="font-size:150px;color:black"></i>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -96,18 +116,24 @@
         </div>
     </div>
 
-    <div class="container my-4" >
+    <div class="container-fluid my-4" >
         <!-- Control the column width, and how they should appear on different devices -->
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-xl-3">
-                <img src="images/handshake.jpg" style="height:250px;width:100%;">
+            <div class="col-sm-12 col-md-6 col-xl-3 mb-4 mt-md-4 mt-xl-4 mb-md-4 mb-xl-4" >
+                <div >
+                    <img src="images/handshake.jpg" style="height:250px;width:100%;">
+              
+               
                 <div>
-                    <button type="button" class="btn btn-primary">Project 1</button>
+                    <button type="button" class="btn btn-primary ">Project 1</button>
                 </div>
-                <p class="card-text" style="background:lightgrey;">This card has supporting text below
-                    as a natural lead-in to additional content.</p>
+                <div class="">
+                    <p class="card-text" style="background:lightgrey;">This card has supporting text below
+                        as a natural lead-in to additional content.</p>
+                </div>
+                </div>  
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="col-sm-12 col-md-6 col-xl-3  mb-4 mt-md-4 mt-xl-4 mb-md-4 mb-xl-4 ">
                 <img src="images/phone.jpg" style="height:250px;width:100%;">
                 <div>
                     <button type="button" class="btn btn-primary">Project 2</button>
@@ -115,7 +141,7 @@
                 <p class="card-text" style="background:lightgrey;">This card has supporting text below
                     as a natural lead-in to additional content.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="col-sm-12 col-md-6 col-xl-3  mb-4 mt-md-4 mt-xl-4">
                 <img src="images/smile.jpg" style="height:250px;width:100%;">
                 <div>
                     <button type="button" class="btn btn-primary">Project 3</button>
@@ -123,31 +149,31 @@
                 <p class="card-text" style="background:lightgrey;">This card has supporting text below
                     as a natural lead-in to additional content.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="col-sm-12 col-md-6 col-xl-3  mb-4 mt-md-4 mt-xl-4   ">
                 <img src="images/note.jpg" style="height:250px;width:100%;">
                 <div>
                     <button type="button" class="btn btn-primary">Project 4</button>
                 </div>
-                <p class="card-text" style="background:lightgrey;">This card has supporting text below
+                <p class="card-text " style="background:lightgrey;">This card has supporting text below
                     as a natural lead-in to additional content.</p>
             </div>
         </div>
     </div>
 
 
-    <div class="conatainer my-3">
+    <div class="container-fluid my-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-xxl-6 mx-5" style="border-color:white;background:white;">
+            <div class="col-sm-12 col-md-12 col-xxl-8  " style="background:white;   ">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <img src="images/assistant.jpg" style="height:300px; width:100%;">
+                    <div class="col-sm-12 col-md-6 col-xxl-6">
+                        <img src="images/assistant.jpg" class="img-fluid"style="max-width:100%; height:40vh;">
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6 col-xxl-6"style="font-size:3vw;">
                         <h2 style="color:lightblue;"><b>JUST FEW WORDS</b></h2>
-                        <p>Some important tasksSome important tasks
+                        <p class="text">Some important tasksSome important tasks
                             Some important tasksSome important tasks
                         </p>
-                        <ul>
+                        <ul class="text"> 
                             <li>
                                 Some important tasks
                             </li>
@@ -170,20 +196,20 @@
 
 
             </div>
-            <div class="col-sm-12 col-md-12 col-xxl-5 text-center" style="background:white;">
-                <img src="images/office.jpg" style="height:150px; width:90%;">
+            <div class="col-sm-12 col-md-12 col-xxl-4 text-center" style="background:white;">
+                <img src="images/office.jpg" style="max-width:100%;">
 
-                <img src="images/smile.jpg" class="rounded-circle" alt="Cinque Terre" style="height:100px;width:20%;
+                <img src="images/smile.jpg" class="rounded-circle" alt="Cinque Terre" style="margin-top:-1rem;height:100px;width:20%;
                 ">
 
                 <h5><b>EMMA THOMSON</b></h5>
 
-                <p class="card-text">This card has supporting text below
+                <p class="card-text photo-text">This card has supporting text below
                     as a natural lead-in to additional content.</p>
             </div>
         </div>
     </div>
-    <div class="container my-4" style="background:grey;">
+    <div class="container-fluid my-2" style="background-color:grey;">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-3 col-lg-6 my-2" >
                 <h2>POPULAR HEADINGS</h2>
@@ -244,7 +270,7 @@
                             style="font-size:30px;border:solid;width:30px;background:red;color:white""></i>
                     </div>
                 </div>
-                <div class=" row"style="">
+                <div class="row "style="">
                             <div class="col-sm-12 col-md-6"><i class="fa fa-facebook"
                                     style="font-size:30px;background:blue;color:white; border:solid;width:30px;"></i>
                                 <i class="fa fa-skype "
@@ -254,7 +280,18 @@
                 
             </div>
         </div>
-    </div>   
+    </div>  
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row paragraph"  style="background:lightgrey;">
+            <div class="col-sm-12 col-md-6 text-center paragraph1">COPYRIGHT PVT</div>
+            <div class="col-sm-12 col-md-6  text-center paragraph2">ALL RIGHT RESERVED </div>
+        </div>
+    </div>
+    
+    
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                                     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                                     crossorigin="anonymous"></script>
